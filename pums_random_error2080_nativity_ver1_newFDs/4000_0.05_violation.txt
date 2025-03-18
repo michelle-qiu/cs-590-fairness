@@ -1,0 +1,5 @@
+{CIT->NATIVITY    ST->DIVISION    DIVISION->REGION    RAC2P->RAC1P    POBP->WAOB}
+Pairwise Violation Ratio: 10.475% (837819 / 7998000)
+Percentage of Violated Tuples: 100.0% (4000 / 4000)
+error rate of cell: 4.444%
+error rate of tuple: 30.925%
