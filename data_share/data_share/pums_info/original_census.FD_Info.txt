@@ -1,0 +1,196 @@
+Table : original_census
+Columns : RAC1P, SEX, REGION, PINCP, ST, COW, CIT, NATIVITY, MSP, SCHL, DIS, MIL
+
+Functional Dependencies: 
+{ST} -> {REGION}
+{CIT} -> {NATIVITY}
+
+Equivalences: 
+
+Keys: 
+{RAC1P, SEX, PINCP, ST, COW, CIT, MSP, SCHL, DIS, MIL}
+
+Time (s): 133.7711
+Row count: 32755
+Attribute count: 12
+Number of Equivalences: 0
+Number of FDs: 2
+Number of FDs checked: 3839
+
+
+RAC1P Character 1
+    Recoded detailed race code
+    1 .White alone
+    2 .Black or African American alone
+    3 .American Indian alone
+    4 .Alaska Native alone
+    5 .American Indian and Alaska Native tribes specified; or
+    .American Indian or Alaska Native, not specified and no other
+    .races
+    6 .Asian alone
+    7 .Native Hawaiian and Other Pacific Islander alone
+    8 .Some Other Race alone
+    9 .Two or More Races
+
+SEX Character 1
+    Sex
+    1 .Male
+    2 .Female
+
+REGION Character 1
+    Region code based on 2010 Census definitions
+    1 .Northeast
+    2 .Midwest
+    3 .South
+    4 .West
+    9 .Puerto Rico
+
+PINCP Numeric 7
+    Total person's income (signed, use ADJINC to adjust to constant
+    dollars)
+    bbbbbbb .N/A (less than 15 years old)
+    0 .None
+    -19998 .Loss of $19998 or more (Rounded and bottom-
+    .coded components)
+    -19997..-1 .Loss $1 to $19997 (Rounded components)
+    1..4209995 .$1 to $4209995 (Rounded and top-coded
+    .components)
+
+ST Character 2
+    State Code based on 2010 Census definitions
+    01 .Alabama/AL
+    02 .Alaska/AK
+    04 .Arizona/AZ
+    05 .Arkansas/AR
+    06 .California/CA
+    08 .Colorado/CO
+    09 .Connecticut/CT
+    10 .Delaware/DE
+    11 .District of Columbia/DC
+    12 .Florida/FL
+    13 .Georgia/GA
+    15 .Hawaii/HI
+    16 .Idaho/ID
+    17 .Illinois/IL
+    18 .Indiana/IN
+    19 .Iowa/IA
+    20 .Kansas/KS
+    21 .Kentucky/KY
+    22 .Louisiana/LA
+    23 .Maine/ME
+    24 .Maryland/MD
+    25 .Massachusetts/MA
+    26 .Michigan/MI
+    27 .Minnesota/MN
+    28 .Mississippi/MS
+    29 .Missouri/MO
+    30 .Montana/MT
+    31 .Nebraska/NE
+    32 .Nevada/NV
+    33 .New Hampshire/NH
+    34 .New Jersey/NJ
+    35 .New Mexico/NM
+    36 .New York/NY
+    37 .North Carolina/NC
+    38 .North Dakota/ND
+    39 .Ohio/OH
+    40 .Oklahoma/OK
+    41 .Oregon/OR
+    42 .Pennsylvania/PA
+    44 .Rhode Island/RI
+    45 .South Carolina/SC
+    46 .South Dakota/SD
+    47 .Tennessee/TN
+    48 .Texas/TX
+    49 .Utah/UT
+    50 .Vermont/VT
+    51 .Virginia/VA
+    53 .Washington/WA
+    54 .West Virginia/WV
+    55 .Wisconsin/WI
+    56 .Wyoming/WY
+    72 .Puerto Rico/PR
+
+COW Character 1
+    Class of worker
+    b .N/A (less than 16 years old/NILF who last worked more than 5
+    .years ago or never worked)
+    1 .Employee of a private for-profit company or business, or of an
+    .individual, for wages, salary, or commissions
+    2 .Employee of a private not-for-profit, tax-exempt, or
+    .charitable organization
+    3 .Local government employee (city, county, etc.)
+    4 .State government employee
+    5 .Federal government employee
+    6 .Self-employed in own not incorporated business, professional
+    .practice, or farm
+    7 .Self-employed in own incorporated business, professional
+    .practice or farm
+    8 .Working without pay in family business or farm
+    9 .Unemployed and last worked 5 years ago or earlier or never
+    .worked
+
+CIT Character 1
+    Citizenship status
+    1 .Born in the United States
+    2 .Born in Puerto Rico, Guam, the U.S. Virgin Islands, or
+    .Northern Marianas
+    3 .Born abroad of U.S. citizen parent or parents
+    4 .U.S. citizen by naturalization
+    5 .Not a U.S. citizen
+
+NATIVITY Character 1
+    Nativity
+    1 .Native
+    2 .Foreign born
+
+MSP Character 1
+    Married, spouse present/spouse absent
+    b .N/A (age less than 15 years)
+    1 .Now married, spouse present
+    2 .Now married, spouse absent
+    3 .Widowed
+    4 .Divorced
+    5 .Separated
+    6 .Never married
+
+SCHL Character 2
+    Educational attainment
+    bb .N/A (less than 3 years old)
+    01 .No schooling completed
+    02 .Nursery school, preschool
+    03 .Kindergarten
+    04 .Grade 1
+    05 .Grade 2
+    06 .Grade 3
+    07 .Grade 4
+    08 .Grade 5
+    09 .Grade 6
+    10 .Grade 7
+    11 .Grade 8
+    12 .Grade 9
+    13 .Grade 10
+    14 .Grade 11
+    15 .12th grade - no diploma
+    16 .Regular high school diploma
+    17 .GED or alternative credential
+    18 .Some college, but less than 1 year
+    19 .1 or more years of college credit, no degree
+    20 .Associate's degree
+    21 .Bachelor's degree
+    22 .Master's degree
+    23 .Professional degree beyond a bachelor's degree
+    24 .Doctorate degree
+
+DIS Character 1
+    Disability recode
+    1 .With a disability
+    2 .Without a disability
+
+MIL Character 1
+    Military service
+    b .N/A (less than 17 years old)
+    1 .Now on active duty
+    2 .On active duty in the past, but not now
+    3 .Only on active duty for training in Reserves/National Guard
+    4 .Never served in the military

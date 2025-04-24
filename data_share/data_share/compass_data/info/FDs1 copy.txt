@@ -1,0 +1,11 @@
+Person_ID -> Ethnic
+Person_ID -> DateOfBirth
+Person_ID -> FirstName
+Person_ID -> Sex
+Person_ID -> Agency_Text
+Person_ID -> LastName
+DecileScore -> ScoreText
+Scale_ID -> DisplayText
+DisplayText -> Scale_ID
+RecSupervisionLevel -> RecSupervisionLevelText
+RecSupervisionLevelText -> RecSupervisionLevel

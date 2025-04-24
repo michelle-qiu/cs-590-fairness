@@ -1,0 +1,4 @@
+DecileScore -> ScoreText
+RecSupervisionLevel -> RecSupervisionLevelText
+RecSupervisionLevelText -> RecSupervisionLevel
+FirstName,LastName,DateOfBirth -> Sex

@@ -1,0 +1,5 @@
+DecileScore -> ScoreText
+RecSupervisionLevel -> RecSupervisionLevelText
+RecSupervisionLevelText -> RecSupervisionLevel
+Scale_ID -> DisplayText
+DisplayText -> Scale_ID

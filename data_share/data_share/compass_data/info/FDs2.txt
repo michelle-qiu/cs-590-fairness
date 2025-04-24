@@ -1,0 +1,6 @@
+DecileScore -> ScoreText
+RecSupervisionLevel -> RecSupervisionLevelText
+RecSupervisionLevelText -> RecSupervisionLevel
+Person_ID -> Ethnic
+Person_ID -> Sex
+Person_ID -> Agency_Text
